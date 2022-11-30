@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <base href="http://localhost:3333" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="amlc-construção, arquitectura, arquitecto, planta"
+    />
+    <meta
+      name="description"
+      content="Plantas profissionalmente arquitectadas"
+    />
+    <meta name="author" content="RMINDR" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/font-awesome/all/css/all.css" />
+    <link rel="shortcut icon" href="" type="image/jpg" />
+    <title>AMLC-Construção</title>
+  </head>
+  <body>
+    <div class="contact__container">
+      <header class="contact__header">
+        <nav class="contact__nav">
+          <ol>
+            <li><a href="/" target="_self">Explorar</a></li>
+            <li><a href="/galeria" target="_self">Galeria</a></li>
+            <li><a href="/pages/about.html" target="_self">Sobre</a></li>
+          </ol>
+        </nav>
+      </header>
+      <section class="contact__waw">
+        <div>
+          <h2>Entre em contacto</h2>
+        </div>
+      </section>
+      <form action="/createUser" method="post" class="contact__form">
+        <div>
+          <label for="name">Nome</label>
+          <br />
+          <input
+            type="name"
+            name="name"
+            id="name"
+            placeholder="Digite aqui o seu nome"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite aqui o seu e-mail"
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Mensagem</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="55"
+            rows="8"
+            placeholder="Sua mensagem aqui"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <footer>
+        <div class="contact__contacto">
+          <h2>Nossas redes sociais</h2>
+          <a href=""><i class="fas fa-facebook"></i>Facebook</a>
+          <a href=""><i class="fas fa-instagram"></i>Instagram</a>
+        </div>
+        <div class="contact__about-us">
+          <h2>Sobre nós</h2>
+          <span
+            >Aqui vai uma descrição sobre o que você faz, o que te distingue da
+            maioria e se possível breves estatísticas, no máximo, algo de 4
+            linhas.</span
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

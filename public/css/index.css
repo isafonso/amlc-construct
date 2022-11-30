@@ -1,0 +1,300 @@
+:root {
+  --background: rgb(185, 0, 115);
+}
+
+.index__container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex: 1;
+}
+
+header .index__welcome {
+  width: 50vw;
+  height: 100%;
+  background-color: var(--background);
+}
+
+header .index__welcome nav ol {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+header .index__welcome nav ol li {
+  padding: 1rem 0.1rem;
+  font-size: 1.25rem;
+}
+
+header .index__welcome nav ol li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .index__welcome .index__text-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .index__welcome .index__text-welcome h2 {
+  text-transform: uppercase;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+header .index__welcome .index__text-welcome h2 b {
+  color: white;
+  padding: 2rem 0;
+}
+
+header .index__welcome .index__text-welcome span {
+  color: white;
+  margin: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+header .index__welcome .buttons {
+  margin: 0.25rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+header .index__welcome .buttons button {
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header .index__welcome .buttons button:nth-child(1) {
+  background-color: white;
+  color: var(--background);
+  border: none;
+  padding: 0.75rem 1.75rem;
+}
+
+header .index__welcome .buttons button:nth-child(2) {
+  background-color: var(--background);
+  color: white;
+  border: 2.5px solid white;
+  padding: 0.5rem 1.5rem;
+}
+
+header .index__picture1 {
+  width: 50%;
+  background-image: url("/assets/images/arch6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+main .index__main-section1 {
+  width: 60vw;
+  position: relative;
+  height: 50%;
+}
+
+main .index__main-section1 div {
+  position: absolute;
+  top: -25px;
+  right: -100px;
+  left: 250px;
+}
+
+main .index__main-section1 div img {
+  object-fit: cover;
+  width: 40vw;
+  height: 400px;
+}
+
+main .index__main-section2 {
+  position: relative;
+  width: 40vw;
+  height: 50%;
+}
+
+main .index__main-section2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  left: 8rem;
+}
+
+main .index__main-section2 div h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+}
+
+main .index__main-section2 div span {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+main .index__main-section2 div .btn {
+  margin: 1rem 0 0 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--background);
+  color: white;
+  border: 2.5px solid white;
+  padding: 0.5rem 1.5rem;
+}
+
+main .index__main-section3 {
+  position: relative;
+  width: 30vw;
+  height: 50%;
+  /*margin: 0 0 1rem 0;*/
+}
+
+main .index__main-section3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  position: absolute;
+  top: 25rem;
+  right: 1rem;
+  left: 15rem;
+}
+
+main .index__main-section3 div h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+}
+
+main .index__main-section3 div span {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+main .index__main-section3 div .btn {
+  margin: 1rem 0 0 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--background);
+  color: white;
+  border: 2.5px solid white;
+  padding: 0.5rem 1.5rem;
+}
+
+main .index__main-section4 {
+  position: relative;
+  width: 70vw;
+  height: 50%;
+  /*margin: 0 0 1rem 0;*/
+}
+
+main .index__main-section4 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30rem;
+  right: 2.5rem;
+  left: 1rem;
+  bottom: 5rem;
+}
+
+main .index__main-section4 div img {
+  object-fit: cover;
+  width: 40vw;
+  height: 300px;
+}
+
+footer {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: black;
+  position: relative;
+  top: 40rem;
+  bottom: 0;
+}
+
+.index__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 5vh;
+}
+
+.index__contacto h2 {
+  color: white;
+}
+
+.index__contacto a i {
+  color: var(--background);
+  width: 100%;
+  height: 50%;
+}
+
+.index__about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50%;
+}
+
+.index__about-us h2 {
+  color: white;
+  padding-top: 2rem;
+}
+
+.index__about-us span {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.index__other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 50%;
+  padding: 2rem;
+}

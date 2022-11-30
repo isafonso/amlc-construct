@@ -1,0 +1,205 @@
+:root {
+  --background: rgb(185, 0, 115);
+}
+
+.about__container {
+  width: 100%;
+  height: 100%;
+}
+
+.about__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  right: 0.75rem;
+}
+
+.about__header .about__nav ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.about__header .about__nav ol li {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.about__header .about__nav ol li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.about__main {
+  width: 100%;
+  margin: 7rem 1rem 0 0.5rem;
+}
+
+.about__main > h2 {
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.about__waw {
+  width: 100vw;
+  height: 10vh;
+}
+
+.about__waw div {
+  width: 20%;
+  border-left: 0.5rem solid var(--background);
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+.about__waw div h2 {
+  border-bottom: 0.25rem solid var(--background);
+  width: 80%;
+}
+
+.about__text {
+  width: 100vw;
+  margin: 1rem 0.5rem;
+}
+
+.about__text p {
+  margin: 0.5rem 2rem;
+  text-indent: 2rem;
+  text-align: justify;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.about__cards {
+  width: 100vw;
+  margin: 1rem 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__cards div {
+  width: 25vw;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  text-indent: 1rem;
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgb(165, 165, 165);
+}
+
+.about__cards div span {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+/* CSS for devices w/ max-width of 600px */
+
+@media (max-width: 600px) {
+  .about__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    right: 0.75rem;
+  }
+
+  .about__header .about__nav ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .about__header .about__nav ol li {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .about__header .about__nav ol li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .about__main {
+    width: 100%;
+    margin: 7rem 1rem 0 0.5rem;
+  }
+
+  .about__main > h2 {
+    width: 80vw;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+
+  .about__waw {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .about__waw div {
+    width: 100%;
+    border-left: 0.5rem solid var(--background);
+    margin-left: 2rem;
+    padding-left: 1rem;
+  }
+
+  .about__waw div h2 {
+    border-bottom: 0.25rem solid var(--background);
+    width: 50%;
+  }
+
+  .about__text {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .about__text p {
+    margin: 0.5rem 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+
+  .about__cards {
+    width: 100vw;
+    margin: 1rem 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about__cards div {
+    width: 80vw;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    text-indent: 1rem;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgb(165, 165, 165);
+  }
+
+  .about__cards div span {
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+  }
+}

@@ -1,0 +1,148 @@
+.container {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgb(145, 200, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative !important;
+}
+
+.container .post__goBack {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.container .post__goBack a {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border-style: none;
+  background-color: rgba(0, 128, 255, 0.562);
+  cursor: pointer;
+  width: 10rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.container h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.container .form__post div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.container .form__post .form__post_dataContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+.container .form__post .form__post_dataContainer .inputPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  width: inherit;
+}
+
+.container
+  .form__post
+  .form__post_dataContainer
+  .inputPost
+  div
+  label:first-child {
+  cursor: pointer;
+}
+
+.container .form__post .form__post_dataContainer .inputPost label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.container
+  .form__post
+  .form__post_dataContainer
+  .inputPost
+  div
+  input:nth-child(1) {
+  width: 80%;
+  border-style: outset;
+  border-width: 1.5px;
+  padding: 2.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.container .form__post .form__post_dataContainer .inputPost textarea {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.container
+  .form__post
+  .form__post_dataContainer
+  .inputPost
+  textarea::placeholder {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.container .form__post .form__post_dataContainer .inputPost div {
+  width: inherit;
+}
+
+.container
+  .form__post
+  .form__post_dataContainer
+  .inputPost
+  div
+  input:nth-child(3) {
+  width: 80%;
+  border-style: outset;
+  border-width: 1.5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.container
+  .form__post
+  .form__post_dataContainer
+  .inputPost
+  div
+  input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0rem;
+  border-style: none;
+  color: white;
+  background-color: rgba(0, 128, 255, 0.562);
+  cursor: pointer;
+  width: 80%;
+  font-size: 1.25rem;
+}
+
+.container .form__post div input[type="submit"]:hover {
+  background-color: rgb(0, 128, 255);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Pambalas, Revender, Fornecer" />
+    <meta name="description" content="Venda de productos informais e não só" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/font-awesome/all/css/all.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="shortcut icon" href="" type="image/jpg" />
+    <title>ArchStore</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post__goBack">
+        <a onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</a>
+      </div>
+      <h3>ArchStore</h3>
+      <form
+        action="/post"
+        method="post"
+        class="form__post"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label for="file"> <i class="fa fa-upload"></i></label>
+          <input
+            type="file"
+            name="picture"
+            id="file"
+            required
+            accept="image/*"
+          />
+        </div>
+        <div class="form__post_dataContainer">
+          <div class="inputPost">
+            <label for="textarea"
+              >Dê uma breve descrição sobre a sua planta</label
+            >
+            <br />
+            <textarea
+              name="description"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Deixe aqui a descrição sobre a sua venda"
+              required
+            ></textarea>
+          </div>
+          <div class="inputPost">
+            <div>
+              <label for="name"
+                >Insira o nome da sua planta</label
+              >
+              <br />
+              <input
+                name="name"
+                id="name"
+                cols="30"
+                rows="10"
+                placeholder="Nome do producto"
+                required
+              ></input>
+            </div>
+            
+            <div>
+              <label for="price">Informe o preço do seu serviço</label>
+              <br />
+              <input
+                type="number"
+                name="price"
+                id="price"
+                placeholder="Preço"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Informe o seu e-mail</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Informe o seu e-mail"
+                required
+              />
+            </div>
+
+            <div>
+              <input type="submit" value="Publicar" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/js/bootstrap.min.css"></script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

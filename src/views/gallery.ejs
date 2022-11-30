@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <base href="http://localhost:3333" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="amlc-construção, arquitectura, arquitecto, planta"
+    />
+    <meta
+      name="description"
+      content="Plantas profissionalmente arquitectadas"
+    />
+    <meta name="author" content="RMINDR" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
+    <link rel="stylesheet" href="/css/font-awesome/all/css/all.css" />
+    <link rel="shortcut icon" href="" type="image/jpg" />
+    <title>AMLC-Construção</title>
+  </head>
+  <body>
+    <main class="gallery__slider-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <% if(product){ %> <% product.forEach(p => {%>
+          <div class="swiper-slide">
+            <div class="slider__img">
+              <img src="<%= p.picture %>" alt="" />
+            </div>
+            <div class="slider__content">
+              <h2><%= p.name %></h2>
+              <span><%= p.description %></span>
+            </div>
+          </div>
+          <% }) %> <% } %>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </main>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/gallery.js"></script>
+  </body>
+</html>
